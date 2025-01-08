@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hokejová účast (Express + Socket.IO)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hokejové tréninky</h1>
+    <div id="countdownContainer">
+      <span>Čas do nejbližšího tréninku: </span>
+      <span id="countdown">00d:00h:00m:00s</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Tabulka účasti (bez pořadí hráčů) -->
+    <section class="attendance-section">
+      <h2>Tabulka účasti</h2>
+
+      <div class="table-container">
+        <table id="attendanceTable">
+          <thead>
+            <!-- 1) Záhlaví s daty (a časy) -->
+            <tr id="trainingDatesRow"></tr>
+            <!-- 2) Řádek s počtem hráčů, co jdou/nejdou -->
+            <tr id="playersCountRow" class="count-row"></tr>
+          </thead>
+          <tbody id="playersTbody">
+            <!-- Řádky hráčů -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Statistiky jednotlivých hráčů -->
+    <section class="stats-section">
+      <h2>Moje statistiky</h2>
+      <div class="player-stats">
+        <label for="playerSelect">Vyber hráče:</label>
+        <select id="playerSelect">
+          <option value="">-- Vyber hráče --</option>
+        </select>
+        <div class="stats-info">
+          <p id="statsText">Zde se zobrazí statistika účasti vybraného hráče.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admin panel -->
+    <section class="admin-section">
+      <h2>Admin panel</h2>
+      <div class="admin-form">
+        <label for="adminName">Jméno (admin):</label>
+        <input type="text" id="adminName" />
+        <label for="adminPass">Heslo (admin):</label>
+        <input type="password" id="adminPass" />
+        <button id="adminLoginBtn">Přihlásit</button>
+      </div>
+      <div id="adminTools" class="hidden">
+        <h3>Nástroje pro úpravy</h3>
+        <button id="addPlayerBtn">Přidat hráče</button>
+        <button id="addTrainingDateBtn">Přidat trénink</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Socket.IO klient -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Vlastní JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* Reset a základ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+header {
+  background-color: #464646;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#countdownContainer {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+#attendanceTable {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+  background: #fff;
+}
+
+#attendanceTable thead th {
+  background-color: #eee;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* Řádek s počtem hráčů (Hráčů jde: X/Y) */
+.count-row td {
+  background-color: #ffe8cc;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#attendanceTable tbody td {
+  text-align: center;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+}
+
+/* Styl pro buňky "jdu/nejdu" */
+.going {
+  background-color: #c3f7c2; /* světle zelená */
+}
+.not-going {
+  background-color: #f7c2c2; /* světle červená */
+}
+.nahradnik{
+  background-color: #fd9e67;
+}
+
+/* Select uvnitř buňky */
+.attendance-select {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.attendance-section,
+.stats-section,
+.admin-section {
+  background: #ffffff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Výběr hráče pro statistiky */
+.player-stats {
+  margin-top: 1rem;
+}
+
+.player-stats select {
+  padding: 0.4rem;
+}
+
+/* Admin sekce */
+.admin-section {
+  position: relative;
+}
+
+.admin-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.admin-form input {
+  padding: 0.4rem;
+}
+
+#adminLoginBtn {
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+#adminTools.hidden {
+  display: none;
+}
+
+#adminTools button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

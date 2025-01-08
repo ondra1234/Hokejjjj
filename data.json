@@ -1,0 +1,320 @@
+{
+  "trainingDates": [
+    "2025-01-20 20:00",
+    "2025-01-27 19:30"
+  ],
+  "players": [
+    {
+      "name": "Jan",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000000123
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Petr",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355921474
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000004567
+        }
+      }
+    },
+    {
+      "name": "Josef",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000002222
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000009999
+        }
+      }
+    },
+    {
+      "name": "Karel",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355923397
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Martin",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000011111
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Pavel",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355924884
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000012345
+        }
+      }
+    },
+    {
+      "name": "Tomáš",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000013333
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000017777
+        }
+      }
+    },
+    {
+      "name": "Lukáš",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355926442
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "David",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000020000
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000020555
+        }
+      }
+    },
+    {
+      "name": "Jakub",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355937817
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000022222
+        }
+      }
+    },
+    {
+      "name": "Daniel",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000023333
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Adam",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355928196
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000029999
+        }
+      }
+    },
+    {
+      "name": "Tereza",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736356351625
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000031000
+        }
+      }
+    },
+    {
+      "name": "Hana",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736356495558
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Jana",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736356364767
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Eva",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355930063
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000035555
+        }
+      }
+    },
+    {
+      "name": "Marie",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "nejdu",
+          "joinTs": null
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Anna",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000036000
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000037000
+        }
+      }
+    },
+    {
+      "name": "Petra",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355932591
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Barbora",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000039000
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Kristýna",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1670000040000
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000041000
+        }
+      }
+    },
+    {
+      "name": "Nikol",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736355933931
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Klára",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736356490944
+        },
+        "2025-01-27 19:30": {
+          "status": "nejdu",
+          "joinTs": null
+        }
+      }
+    },
+    {
+      "name": "Lenka",
+      "attendance": {
+        "2025-01-20 20:00": {
+          "status": "jdu",
+          "joinTs": 1736356493245
+        },
+        "2025-01-27 19:30": {
+          "status": "jdu",
+          "joinTs": 1670000045000
+        }
+      }
+    }
+  ]
+}

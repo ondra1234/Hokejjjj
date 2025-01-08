@@ -1,0 +1,17 @@
+takze potrebuju aby si vytvoril webove stranky a aby splnovaly tyto pozadavky:
+1. je to stranka na zaznamenavani ucasti na hokejovych treninzich
+2. kazdy hrac si tam muze zapsat do tabulky jesli jde nebo nejde na trenink
+3. cele to bude takova uhledna a stylova tabulka kde se bude moct pridavat radky nebo sloupce podle potreby
+3. vzdy bude na hore na sloupci datum treninku a pod tim budou na levo pod sebou napsani hraci a ti si pak pod datum ve stejnem sloupci vyberou bud "jdu" (policko bude zelene) nebo "nejdu" (policko bude cervene)
+a v levem hornim rohu bude napsan cas dny:hodiny:minuty:sekundy do dalsiho treninku (berme v potazze treninky jsou od 20.00 ale tato hodnota bude menitelna)
+4. bude se tam zaznamenavat statistika od data 20. ledna az po cely rok zase do 20. ledna atd
+5. pod tabulkou bude sloupec lidi od 1 do poctu prihlasenych lidi podle toho kdo se prihlasil v jakem poradi ale pod dvacatym hokejistou bude ---------- (cara) a pak to bude pokracovat
+jeslize se ale nekdo odhlasi z tech 20 tak ho hned vymeni ten co byl 21 atd
+proste ten kdo je pod carou nahradi ty co odpadnou z tech co jsou nad carou v prvni 20
+6. a po te tam jeste bude select na to ze si kazdy hrac muze sam sebe najit a po vybrani uvidi svoji ucast na kolika trenincich byl z kolika a procentualni ucast
+7. a na konec to udelej tak ze uplne dole bude "jmeno"(admin) a "heslo"(admin) (bude se dat zmenit) a tam kdyz se zada spravne tak se ten kdo to heslo zada bude moct upravovat tabulku tzn. pridavat sloupce, radky, data treninku
+
+vse mi to napis jako soubory HTML, CSS, JS
+nevim jesli je treba pouzit databazi
+a potrebuju to udelat tak ze se to bude updatovat realtime
+takze dalůsi hraci hned uvidi kdo jde a kdo nejde
