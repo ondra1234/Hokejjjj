@@ -49,13 +49,13 @@ class Postava
     private int pocet_zivotu;
     public int magie;
 
-    public Postava(string zadaneJmeno, int silaHodnota, int obratnostHodnota, int pocetZivotuHodnota, int magieHodnota)
+    public Postava(string jmeno, int sila, int obratnost, int pocetZivotu, int magie)
     {
-        jmeno = zadaneJmeno;
-        sila = silaHodnota;
-        obratnost = obratnostHodnota;
-        pocet_zivotu = pocetZivotuHodnota;
-        magie = magieHodnota;
+        this.jmeno = jmeno;
+        this.sila = sila;
+        this.obratnost = obratnost;
+        pocet_zivotu = pocetZivotu;
+        this.magie = magie;
     }
 
     // Vraci, zda postava jeste zije.
