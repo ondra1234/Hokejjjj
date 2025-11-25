@@ -49,13 +49,13 @@ class Postava
     private int pocet_zivotu;
     public int magie;
 
-    public Postava(string jmeno, int sila, int obratnost, int pocetZivotu, int magie)
+    public Postava(string noveJmeno, int novaSila, int novaObratnost, int noveZivoty, int novaMagie)
     {
-        this.jmeno = jmeno;
-        this.sila = sila;
-        this.obratnost = obratnost;
-        pocet_zivotu = pocetZivotu;
-        this.magie = magie;
+        jmeno = noveJmeno;
+        sila = novaSila;
+        obratnost = novaObratnost;
+        pocet_zivotu = noveZivoty;
+        magie = novaMagie;
     }
 
     // Vraci, zda postava jeste zije.
@@ -188,10 +188,10 @@ class Program
     static void SpustPostavyDemo()
     {
         Console.WriteLine("\n--- Ukazka tridy Postava ---");
-        Postava bojovnik = new Postava("Bojovnik", sila: 7, obratnost: 4, pocetZivotu: 60, magie: 2);
-        Postava kouzelnik = new Postava("Kouzelnik", sila: 3, obratnost: 6, pocetZivotu: 40, magie: 12);
-        Postava zombi = new Postava("Zombi", sila: 5, obratnost: 2, pocetZivotu: 55, magie: 0);
-        Postava lucistnik = new Postava("Lucistnik", sila: 4, obratnost: 7, pocetZivotu: 45, magie: 3);
+        Postava bojovnik = new Postava("Bojovnik", 7, 4, 60, 2);
+        Postava kouzelnik = new Postava("Kouzelnik", 3, 6, 40, 12);
+        Postava zombi = new Postava("Zombi", 5, 2, 55, 0);
+        Postava lucistnik = new Postava("Lucistnik", 4, 7, 45, 3);
 
         Console.WriteLine("\n=> Bojovnik utoci na zombii:");
         bojovnik.Bojuj(zombi);
