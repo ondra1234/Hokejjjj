@@ -49,13 +49,13 @@ class Postava
     private int pocet_zivotu;
     public int magie;
 
-    public Postava(string jmeno, int sila, int obratnost, int pocetZivotu, int magie)
+    public Postava(string zadaneJmeno, int silaHodnota, int obratnostHodnota, int pocetZivotuHodnota, int magieHodnota)
     {
-        this.jmeno = jmeno;
-        this.sila = sila;
-        this.obratnost = obratnost;
-        pocet_zivotu = pocetZivotu;
-        this.magie = magie;
+        jmeno = zadaneJmeno;
+        sila = silaHodnota;
+        obratnost = obratnostHodnota;
+        pocet_zivotu = pocetZivotuHodnota;
+        magie = magieHodnota;
     }
 
     // Vraci, zda postava jeste zije.
@@ -209,6 +209,19 @@ class Program
         Postava arenaBojovnik = new Postava("Bojovnik", 7, 4, 60, 2);
         Postava arenaZombi = new Postava("Zombi", 5, 2, 55, 0);
         SimulujBoj(arenaBojovnik, arenaZombi);
+
+        Console.WriteLine("\n--- Vytvoreni tve postavy ---");
+        Console.Write("Zadej jmeno sve postavy: ");
+        string? uzivJmeno = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(uzivJmeno))
+        {
+            uzivJmeno = "Hrdina";
+        }
+
+        Postava hrac = VytvorPostavuDleVolby(uzivJmeno);
+        Postava treninkovyNepritel = new Postava("Cviczna Zombi", 4, 2, 35, 0);
+        Console.WriteLine($"\n{hrac.jmeno} se postavi protivnikovi s nazvem {treninkovyNepritel.jmeno}!");
+        SimulujBoj(hrac, treninkovyNepritel);
     }
 
     // Souboj pokracuje, dokud nekdo neklesne na nulu zivotu.
@@ -246,5 +259,32 @@ class Program
 
         string viteze = prvni.JeNazivu() ? prvni.jmeno : druha.jmeno;
         Console.WriteLine($"\nVitezem souboje je: {viteze}");
+    }
+
+    // Umoznuje hraci zvolit si tridu a podle toho nastavi statistiky.
+    static Postava VytvorPostavuDleVolby(string jmenoPostavy)
+    {
+        Console.WriteLine("\nVyber tridu postavy:");
+        Console.WriteLine("1 - Bojovnik (hodne zivotu, mensi magie)");
+        Console.WriteLine("2 - Kouzelnik (slabsi telo, ale silna kouzla)");
+        Console.WriteLine("3 - Zombi (pomalejsi, ale vydrzi)");
+        Console.WriteLine("4 - Lucistnik (rychly a vyvazeny)");
+        Console.Write("Tvoje volba: ");
+
+        string? volbaTridy = Console.ReadLine();
+        switch (volbaTridy)
+        {
+            case "1":
+                return new Postava(jmenoPostavy, 7, 4, 60, 2);
+            case "2":
+                return new Postava(jmenoPostavy, 3, 6, 40, 12);
+            case "3":
+                return new Postava(jmenoPostavy, 5, 2, 55, 0);
+            case "4":
+                return new Postava(jmenoPostavy, 4, 7, 45, 3);
+            default:
+                Console.WriteLine("Neznama volba, beru z tebe bojovnika.");
+                return new Postava(jmenoPostavy, 7, 4, 60, 2);
+        }
     }
 }
